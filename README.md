@@ -1,4 +1,4 @@
-# Test Automation for iOS Apps using Robot Framework
+# Test Automation for Android Apps and iOS Apps using Mastro by mobile.dev
 
 This is a sample of Test Automation for Android Apps (Reald Device and Emulator) and iOS Apps (ony iOS Simulator) using [Maestro by mobile.dev](https://maestro.mobile.dev/).
 
