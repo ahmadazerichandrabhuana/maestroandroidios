@@ -35,7 +35,7 @@ There are 2 types of Report for Test Execution using Maestro : html and junit.
    maestro test ios/tests --format junit --output allure-results/report.xml
    ```
 
-Make sure to disconnect the unused device to run the desired test types. Or, if you want to run it on specific device, add extra param `--device {udid}` after the keyword `maestro`. For example : 
+Make sure to disconnect the unused device and then connect the desired device to run the targeted test types. Or, if you want to run it on specific device, add extra param `--device {udid}` after the keyword `maestro`. For example : 
    ```
    maestro --device your_android_udid test ios/tests --format html
    ```
