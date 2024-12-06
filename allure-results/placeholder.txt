@@ -1,0 +1,2 @@
+Just placeholder file for allure-results folder.
+You can delete this file as long as allure-result folder is exist.

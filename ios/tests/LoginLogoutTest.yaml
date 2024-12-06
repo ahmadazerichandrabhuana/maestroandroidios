@@ -1,0 +1,35 @@
+appId: com.saucelabs.mydemoapp.rn
+tags:
+  - ios
+---
+- runScript: ../pages/products.js
+- runScript: ../pages/menus.js
+- runScript: ../pages/login.js
+- launchApp
+- tapOn:
+    id: ${output.menus.idIconOpenMenu}
+- tapOn: ${output.menus.textMenuLogin}
+- tapOn:
+    id: ${output.login.idInputUsername}
+- extendedWaitUntil:
+    notVisible: "Menu"
+    timeout: 10000      # Timeout in milliseconds
+- inputText: "bob@example.com"
+- tapOn: ${output.login.textLoginHeader} # hide keyboard by tapping Header
+- tapOn:
+    id: ${output.login.idInputPassword}
+- inputText: "10203040"
+- tapOn: ${output.login.textLoginHeader} # hide keyboard by tapping Header
+- tapOn:
+    id: ${output.login.idButtonLogin}
+- assertVisible: ${output.products.textHeaderProducts}
+- tapOn:
+    id: ${output.menus.idIconOpenMenu}
+- tapOn: ${output.menus.textMenuLogout}
+- extendedWaitUntil:
+    visible: "Cancel"
+    timeout: 10000      # Timeout in milliseconds
+- tapOn:
+    point: ${output.menus.pointButtonConfirmLogout}
+- assertVisible: ${output.menus.textSuccessLogout}
+- stopApp

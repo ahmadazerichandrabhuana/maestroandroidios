@@ -1,0 +1,8 @@
+appId: com.saucelabs.mydemoapp.rn
+tags:
+  - android
+---
+- runScript: ../pages/products.js
+- launchApp
+- assertVisible: ${output.products.textHeaderProducts}
+- stopApp

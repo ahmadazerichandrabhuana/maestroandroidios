@@ -1,0 +1,24 @@
+appId: com.saucelabs.mydemoapp.rn
+tags:
+  - android
+---
+- runScript: ../pages/products.js
+- runScript: ../pages/menus.js
+- runScript: ../pages/login.js
+- launchApp
+- tapOn: ${output.menus.iconHamburger}
+- tapOn: ${output.menus.textMenuLogin}
+- tapOn: ${output.login.inputUsername}
+- inputText: "bob@example.com"
+- hideKeyboard
+- tapOn: ${output.login.inputPassword}
+- inputText: "10203040"
+- hideKeyboard
+- tapOn: ${output.login.buttonLogin}
+- assertVisible: ${output.products.textHeaderProducts}
+- tapOn: ${output.menus.iconHamburger}
+- tapOn: ${output.menus.textMenuLogout}
+- tapOn:
+    id: ${output.menus.buttonConfirmLogout}
+- assertVisible: ${output.menus.textSuccessLogout}
+- stopApp

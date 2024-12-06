@@ -1,0 +1,9 @@
+# flows:
+#   - "**"
+# executionOrder:
+#     continueOnFailure: false # default is true
+#     flowsOrder:
+#         - 001
+#         - 002
+#         - LoginLogoutTest
+#         - LoginTestIncorrectPassword
