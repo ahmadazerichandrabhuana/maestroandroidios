@@ -1,6 +1,6 @@
 # Test Automation for Android Apps and iOS Apps using Maestro by mobile.dev
 
-This is a sample of Test Automation for Android Apps (Reald Device and Emulator) and iOS Apps (ony iOS Simulator) using [Maestro by mobile.dev](https://maestro.mobile.dev/).
+This is a sample of Test Automation for Android Apps (Real Device and Emulator) and iOS Apps (ony iOS Simulator) using [Maestro by mobile.dev](https://maestro.mobile.dev/).
 
 ## Requirements
 
