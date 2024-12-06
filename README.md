@@ -68,7 +68,7 @@ This sample Test Automation consists of 2 main folders : `android` and `ios`. Ea
 
 * pages
    ```
-   Contains apps element for each specific pages, aka implementing Page Object Pattern
+   Contains apps element for each specific pages, kind of implementing Page Object Moddel pattern
    ```
 * tests
    ```
